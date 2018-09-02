@@ -29,8 +29,8 @@
                     <nav class="hide">
                         <a class="animated" href="#home">{{i18n .Lang "navigation.home"}}</a>
                         <a class="animated" href="#services">{{i18n .Lang "navigation.services"}}</a>
-                        <a class="animated" href="#order">{{i18n .Lang "navigation.order"}}</a>
                         <a class="animated" href="#cars">{{i18n .Lang "navigation.cars"}}</a>
+                        <a class="animated" href="#order">{{i18n .Lang "navigation.order"}}</a>
                     </nav>
                     <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                 </div>
@@ -82,8 +82,7 @@
                     </div>
                     <div class="desc">
                         <h4 class="text-uppercase">{{i18n .Lang "service.stock"}}</h4>
-                        <p>Предоставляем склад с температурным режимом ± 20. Склад работает в режиме 24/7.
-                            Перегрузка с фур и доставка до торговых точек: Ашан, Зельгрос, Metro, Пятёрочка, Бахетле, Карусель, Перекресток и т.д.</p>
+                        <p>{{i18n .Lang "service.stock.description"}}</p>
                     </div>
                 </div>
             </div>
@@ -112,10 +111,56 @@
                     </div>
                     <div class="desc">
                         <h4 class="text-uppercase">{{i18n .Lang "service.stock"}}</h4>
-                        <p>Предоставляем склад с температурным режимом ± 20. Склад работает в режиме 24/7.
-                            Перегрузка с фур и доставка до торговых точек: Ашан, Зельгрос, Metro, Пятёрочка, Бахетле, Карусель, Перекресток и т.д.</p>
+                        <p>{{i18n .Lang "service.stock.description"}}</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-area section-gap" id="cars">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 pb-30 header-text">
+                <h1>{{i18n .Lang "home.our-cars"}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="single-blog col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-1.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-1.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-1.description"}}</p>
+            </div>
+            <div class="single-blog col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-2.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-2.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-2.description"}}</p>
+            </div>
+            <div class="single-blog col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-5.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-5.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-5.description"}}</p>
+            </div>
+            <div class="single-blog col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-3.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-3.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-3.description"}}</p>
+            </div>
+            <div class="single-blog col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-4.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-4.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-4.description"}}</p>
             </div>
         </div>
     </div>
@@ -195,53 +240,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="blog-area section-gap" id="cars">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 pb-30 header-text">
-                <h1>{{i18n .Lang "home.our-cars"}}</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="single-blog col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-1.png" alt="">
-                <h4>
-                    <a href="#">{{i18n .Lang "home.car-1.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "home.car-1.description"}}</p>
-            </div>
-            <div class="single-blog col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-2.png" alt="">
-                <h4>
-                    <a href="#">{{i18n .Lang "home.car-2.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "home.car-2.description"}}</p>
-            </div>
-            <div class="single-blog col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-5.png" alt="">
-                <h4>
-                    <a href="#">{{i18n .Lang "home.car-5.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "home.car-5.description"}}</p>
-            </div>
-            <div class="single-blog col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-3.png" alt="">
-                <h4>
-                    <a href="#">{{i18n .Lang "home.car-3.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "home.car-3.description"}}</p>
-            </div>
-            <div class="single-blog col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-4.png" alt="">
-                <h4>
-                    <a href="#">{{i18n .Lang "home.car-4.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "home.car-4.description"}}</p>
             </div>
         </div>
     </div>
