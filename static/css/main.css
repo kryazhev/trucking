@@ -157,7 +157,7 @@ h6, .h6 {
 }
 
 td, th {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 /**
@@ -351,11 +351,11 @@ td, th {
 }
 
 .mb-0 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .mb-0-i {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 .mb-5 {
@@ -411,7 +411,7 @@ td, th {
 }
 
 .pt-0 {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .pt-10 {
@@ -471,7 +471,7 @@ td, th {
 }
 
 .pb-0 {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .pb-10 {
@@ -1360,7 +1360,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -1429,7 +1429,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -1502,7 +1502,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -1758,7 +1758,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .default-select .nice-select {
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   height: 40px;
   background: #f9f9ff;
   padding-left: 20px;
@@ -1768,10 +1768,10 @@ h1, h2, h3, h4, h5, h6 {
 .default-select .nice-select .list {
   margin-top: 0;
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   box-shadow: none;
   width: 100%;
-  padding: 10px 0 10px 0px;
+  padding: 10px 0 10px 0;
 }
 
 .default-select .nice-select .list .option {
@@ -1812,7 +1812,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-select .nice-select {
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   height: 40px;
   background: #f9f9ff;
   padding-left: 45px;
@@ -1823,10 +1823,10 @@ h1, h2, h3, h4, h5, h6 {
 .form-select .nice-select .list {
   margin-top: 0;
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   box-shadow: none;
   width: 100%;
-  padding: 10px 0 10px 0px;
+  padding: 10px 0 10px 0;
 }
 
 .form-select .nice-select .list .option {
@@ -2118,7 +2118,7 @@ nav a:hover {
   background-color: #fff;
   padding: 20px 0;
   width: 100% !important;
-  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  box-shadow: -21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3);
 }
 
 .sticky-wrapper {
@@ -2219,46 +2219,46 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
-.about-area {
+.order-area {
   background-color: #222;
 }
 
-.about-right {
+.order-right {
   padding-right: 20%;
   padding-left: 5%;
 }
 
 @media (max-width: 1280px) {
-  .about-right {
+  .order-right {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
 
 @media (max-width: 991px) {
-  .about-right {
+  .order-right {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 
-.about-right h1 {
+.order-right h1 {
   color: #fff;
   margin-bottom: 45px;
 }
 
 @media (max-width: 1280px) and (min-width: 988px) {
-  .about-right h1 {
+  .order-right h1 {
     font-size: 20px;
     margin-bottom: -8px;
     text-align: center;
   }
-  .about-right h1 br {
+  .order-right h1 br {
     display: none;
   }
 }
 
-.about-right .form-control {
+.order-right .form-control {
   border-radius: 0;
   background-color: transparent;
   border: 1px solid #656463;
@@ -2267,7 +2267,7 @@ nav a:hover {
   padding: 12px;
 }
 
-.about-right input, .about-right textarea {
+.order-right input, .order-right textarea {
   font-size: 14px;
   font-weight: 200;
   background-color: transparent;
@@ -2276,31 +2276,31 @@ nav a:hover {
   color: #fff;
 }
 
-.about-right .option {
+.order-right .option {
   color: #222;
 }
 
-.about-right .nice-select span {
+.order-right .nice-select span {
   color: #ccc;
   font-size: 14px;
   font-weight: 200;
 }
 
-.about-right textarea {
+.order-right textarea {
   height: 150px;
 }
 
 @media (max-width: 1024px) and (min-width: 988px) {
-  .about-right textarea {
+  .order-right textarea {
     height: 70px;
   }
 }
 
-.about-right .list {
+.order-right .list {
   width: 100%;
 }
 
-.about-right .payment-method {
+.order-right .payment-method {
   color: #ccc;
   margin-top: 30px;
 }
@@ -2431,71 +2431,71 @@ nav a:hover {
   margin-top: 15px;
 }
 
-.blog-area h1 {
+.transport-area h1 {
   text-align: center;
   margin-bottom: 25px;
   font-weight: 600;
 }
 
-.blog-area p {
+.transport-area p {
   margin-bottom: 45px;
   text-align: center;
 }
 
-.single-blog h4 {
+.single-transport h4 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 3px;
   margin-top: 35px;
 }
 
-.single-blog a {
+.single-transport a {
   color: #222;
 }
 
-.single-blog .name {
+.single-transport .name {
   font-size: 13px;
   font-weight: 100;
 }
 
-.single-blog p {
+.single-transport p {
   text-align: left;
   margin-top: 15px;
 }
 
-.single-blog .bottom {
+.single-transport .bottom {
   padding: 10px 0;
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
 }
 
-.single-blog .bottom span {
+.single-transport .bottom span {
   margin-left: 10px;
 }
 
 @media (max-width: 768px) {
-  .single-blog {
+  .single-transport {
     margin-bottom: 30px;
   }
-  .single-blog .meta {
+  .single-transport .meta {
     margin-top: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .single-blog .meta {
-    margin-top: 0px;
+  .single-transport .meta {
+    margin-top: 0;
   }
 }
 
-.single-blog .f-img {
+.single-transport .f-img {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.single-blog .f-img:hover {
+.single-transport .f-img:hover {
   cursor: pointer;
   opacity: .5;
   transform: scale(1.05);
