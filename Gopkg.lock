@@ -53,14 +53,6 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:c9795d5e836e00e1c303255ff1b78b4f7ee351ab59c19192650b43a042afbeb3"
-  name = "github.com/kryazhev/blockchain-su"
-  packages = ["models"]
-  pruneopts = "UT"
-  revision = "611e46374a5834c11eb7ceb49514a4c57a46b09e"
-
-[[projects]]
-  branch = "master"
   digest = "1:599c9e137513ed0c618e1a62a128b3292cd4f27eef1d148987aea7dc59532fcd"
   name = "github.com/kryazhev/oauth2"
   packages = ["."]
@@ -68,15 +60,14 @@
   revision = "55f7e213e25f0e3b86e68d531e4690444bb36829"
 
 [[projects]]
-  branch = "master"
-  digest = "1:dedf20eb0d3e8d6aa8a4d3d2fae248222b688ed528201995e152cc497899123c"
+  digest = "1:a2057c5b6feb8feb081ce9987f0e4d0713c6b3a6d3824900e35750f349223a25"
   name = "golang.org/x/crypto"
   packages = [
     "acme",
     "acme/autocert",
   ]
   pruneopts = "UT"
-  revision = "182538f80094b6a8efaade63a8fd8e0d9d5843dd"
+  revision = "c126467f60eb25f8f27e5a981f32a87e3965053f"
 
 [[projects]]
   branch = "master"
@@ -140,7 +131,6 @@
   input-imports = [
     "github.com/astaxie/beego",
     "github.com/beego/i18n",
-    "github.com/kryazhev/blockchain-su/models",
     "github.com/kryazhev/oauth2",
   ]
   solver-name = "gps-cdcl"

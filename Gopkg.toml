@@ -35,10 +35,6 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/kryazhev/blockchain-su"
-
-[[constraint]]
-  branch = "master"
   name = "github.com/kryazhev/oauth2"
 
 [prune]
@@ -46,4 +42,4 @@
   unused-packages = true
 
 [metadata.heroku]
-  root-package = "github.com/kryazhev/blockchain-su"
+  root-package = "github.com/kryazhev/trucking"
