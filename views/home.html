@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="https://png.icons8.com/color/48/f39c12/truck.png">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
     <meta charset="UTF-8">
     <title>{{i18n .Lang "title"}}</title>
+    <meta name="description" content="{{i18n .Lang "description"}}">
+    <meta name="keywords" content="{{i18n .Lang "keywords"}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://png.icons8.com/color/48/f39c12/truck.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/linearicons.css">=
     <link rel="stylesheet" href="/static/css/magnific-popup.css">
@@ -16,8 +17,8 @@
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
-<body>
 
+<body>
 <header class="default-header">
     <div class="container">
         <div class="header-wrap">
@@ -177,10 +178,10 @@
                 <form class="booking-form" id="myForm" action="/action/order">
                     <div class="row">
                         <div class="col-lg-6 d-flex flex-column">
-                            <input name="name" placeholder="{{i18n .Lang "order.form.name"}}" class="form-control mt-20" required="" type="text" required>
+                            <input name="name" placeholder="{{i18n .Lang "order.form.name"}}" class="form-control mt-20" required="required" type="text">
                         </div>
                         <div class="col-lg-6 d-flex flex-column">
-                            <input name="phone" placeholder="{{i18n .Lang "order.form.phone"}}" class="form-control mt-20" required="" type="text" required>
+                            <input name="phone" placeholder="{{i18n .Lang "order.form.phone"}}" class="form-control mt-20" required="required" type="text">
                         </div>
                         <div class="col-lg-12 flex-column">
                             <textarea class="form-control mt-20" name="message" placeholder="{{i18n .Lang "order.form.message"}}" required=""></textarea>
@@ -248,18 +249,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 offset-1">
-                <div class="single-footer-widget mail-chimp">
+                <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.mobiles"}}</h6>
-                    <h3>+7 963 123 49 34</h3>
-                    <h3>+7 963 123 49 36</h3>
-                    <h3>+7 960 078 46 74</h3>
+                    <h3><a href="tel:+7-963-123-4934"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-34</a></h3>
+                    <h3><a href="tel:+7-963-123-4936"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-36</a></h3>
+                    <h3><a href="tel:+7-960-078-4674"><span class="lnr lnr-phone-handset"></span> +7 (960) 078-46-74</a></h3>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="single-footer-widget mail-chimp">
+                <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.emails"}}</h6>
-                    <h3>gadelshin-rustam@mail.ru</h3>
-                    <h3>gadelshinaelena1985@gmail.com</h3>
+                    <h3><a href="mailto:gadelshin-rustam@mail.ru"><span class="lnr lnr-envelope"></span>  gadelshin-rustam@mail.ru</a></h3>
+                    <br/>
+                    <h3><a href="mailto:gadelshinaelena1985@gmail.com"><span class="lnr lnr-envelope"></span> gadelshinaelena1985@gmail.com</a></h3>
                 </div>
             </div>
         </div>
