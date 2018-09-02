@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://png.icons8.com/color/48/f39c12/truck.png">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <title>{{i18n .Lang "title"}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/linearicons.css">=
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="default-header">
+    <div class="container">
+        <div class="header-wrap">
+            <div class="header-top d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="#home"><img src="/static/img/logo.png" alt="{{i18n .Lang "title"}}"></a>
+                </div>
+                <div class="main-menubar d-flex align-items-center">
+                    <nav class="hide">
+                        <a href="#home">{{i18n .Lang "navigation.home"}}</a>
+                        <a href="#services">{{i18n .Lang "navigation.services"}}</a>
+                        <a href="#order">{{i18n .Lang "navigation.order"}}</a>
+                        <a href="#cars">{{i18n .Lang "navigation.cars"}}</a>
+                    </nav>
+                    <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="banner-area relative" id="home">
+    <div class="container">
+        <div class="row fullscreen align-items-center justify-content-center">
+            <div class="banner-content col-lg-6 col-md-12">
+                <h1 class="text-uppercase">
+                    {{i18n .Lang "home.greeting.header1"}} <br>
+                    {{i18n .Lang "home.greeting.header2"}}
+                </h1>
+                <p>{{i18n .Lang "home.greeting.p1"}}</p>
+                <a class="main-menubar primary-btn mt-20 text-uppercase" href="#order">{{i18n .Lang "action.order"}}<span class="lnr lnr-arrow-right"></span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feature-area section-gap" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-feature d-flex flex-row pb-30">
+                    <div class="icon">
+                        <span class="lnr lnr-rocket"></span>
+                    </div>
+                    <div class="desc">
+                        <h4 class="text-uppercase">{{i18n .Lang "service.schedule"}}</h4>
+                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                    </div>
+                </div>
+                <div class="single-feature d-flex flex-row pb-30">
+                    <div class="icon">
+                        <span class="lnr lnr-chart-bars"></span>
+                    </div>
+                    <div class="desc">
+                        <h4 class="text-uppercase">{{i18n .Lang "service.emergency"}}</h4>
+                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                    </div>
+                </div>
+                <div class="single-feature d-flex flex-row">
+                    <div class="icon">
+                        <span class="lnr lnr-bug"></span>
+                    </div>
+                    <div class="desc">
+                        <h4 class="text-uppercase">{{i18n .Lang "service.stock"}}</h4>
+                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="single-feature d-flex flex-row pb-30">
+                    <div class="icon">
+                        <span class="lnr lnr-heart-pulse"></span>
+                    </div>
+                    <div class="desc">
+                        <h4 class="text-uppercase">{{i18n .Lang "service.schedule"}}</h4>
+                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                    </div>
+                </div>
+                <div class="single-feature d-flex flex-row pb-30">
+                    <div class="icon">
+                        <span class="lnr lnr-paw"></span>
+                    </div>
+                    <div class="desc">
+                        <h4 class="text-uppercase">{{i18n .Lang "service.emergency"}}</h4>
+                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                    </div>
+                </div>
+                <div class="single-feature d-flex flex-row">
+                    <div class="icon">
+                        <span class="lnr lnr-users"></span>
+                    </div>
+                    <div class="desc">
+                        <h4 class="text-uppercase">{{i18n .Lang "service.stock"}}</h4>
+                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-area" id="order">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-end align-items-center">
+            <div class="col-lg-6 col-md-12 about-left no-padding">
+                <img class="img-fluid" src="/static/img/gazel.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 about-right no-padding">
+                <h1>{{i18n .Lang "home.order.form.header1"}}<br> {{i18n .Lang "home.order.form.header2"}}</h1>
+                <form class="booking-form" id="myForm" action="/action/order">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column">
+                            <input name="name" placeholder="{{i18n .Lang "home.order.form.name"}}" class="form-control mt-20" required="" type="text" required>
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column">
+                            <input name="phone" placeholder="{{i18n .Lang "home.order.form.phone"}}" class="form-control mt-20" required="" type="text" required>
+                        </div>
+                        <div class="col-lg-12 flex-column">
+                            <textarea class="form-control mt-20" name="message" placeholder="{{i18n .Lang "home.order.form.message"}}" required=""></textarea>
+                        </div>
+
+                        <div class="col-lg-12 d-flex justify-content-end send-btn">
+                            <button class="submit-btn primary-btn mt-20 text-uppercase">{{i18n .Lang "action.send"}}<span class="lnr lnr-arrow-right"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="people-area section-gap" id="people">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 pb-80 header-text">
+                <h1>{{i18n .Lang "home.about-us.header"}}</h1>
+                <p>{{i18n .Lang "home.about-us.p1"}}<br>{{i18n .Lang "home.about-us.p2"}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 vol-wrap">
+                <div class="single-con">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                        <img class="content-image img-fluid d-block mx-auto" src="/static/img/c1.jpg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <h4>Рустам Гадельшин</h4>
+                            <p>тут коротенько описание</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 vol-wrap">
+                <div class="single-con">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                        <img class="content-image img-fluid d-block mx-auto" src="/static/img/c2.jpg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <h4>Елена Гадельшина</h4>
+                            <p>тут коротенько описание</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 vol-wrap">
+                <div class="single-con">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                        <img class="content-image img-fluid d-block mx-auto" src="/static/img/c3.jpg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <h4>Кто то еще</h4>
+                            <p>тут коротенько описание</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="blog-area section-gap" id="cars">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 pb-30 header-text">
+                <h1>{{i18n .Lang "home.our-cars"}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="single-blog col-lg-4 col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-1.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-1.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-1.description"}}</p>
+            </div>
+            <div class="single-blog col-lg-4 col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-2.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-2.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-2.description"}}</p>
+            </div>
+            <div class="single-blog col-lg-4 col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-3.png" alt="">
+                <h4>
+                    <a href="#">{{i18n .Lang "home.car-3.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "home.car-3.description"}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 offset-1">
+                <div class="single-footer-widget mail-chimp">
+                    <h6 class="mb-20">{{i18n .Lang "home.contact-us"}}</h6>
+                    <p>{{i18n .Lang "home.contact-us.address"}}</p>
+                    <h3>+7 963 123 49 36</h3>
+                    <h3>+7 960 078 46 74</h3>
+                    <h3>+7 905 375 14 80</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer-bottom d-flex justify-content-between">
+            <p class="col-lg-8 col-sm-12 footer-text m-0">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="/static/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="/static/js/vendor/bootstrap.min.js"></script>
+<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+<script src="/static/js/jquery.nice-select.min.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/parallax.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/static/js/jquery.magnific-popup.min.js"></script>
+<script src="/static/js/waypoints.min.js"></script>
+<script src="/static/js/jquery.counterup.min.js"></script>
+<script >
+    $(document).ready(function(){
+        "use strict";
+
+        var window_width 	 = $(window).width(),
+            window_height 		 = window.innerHeight,
+            header_height 		 = $(".default-header").height(),
+            header_height_static = $(".site-header.static").outerHeight(),
+            fitscreen 			 = window_height - header_height;
+
+
+        $(".fullscreen").css("height", window_height);
+        $(".fitscreen").css("height", fitscreen);
+
+        //-------- Active Sticky Js ----------//
+        $(".default-header").sticky({topSpacing:0});
+
+
+        //------- Active Nice Select --------//
+        $('select').niceSelect();
+
+
+        // -------   Active Mobile Menu-----//
+        $(".menu-bar").on('click', function(e){
+            e.preventDefault();
+            $("nav").toggleClass('hide');
+            $("span", this).toggleClass("lnr-menu lnr-cross");
+            $(".main-menu").addClass('mobile-menu');
+        });
+
+
+        $('.nav-item a:first').tab('show');
+
+
+
+        // Select all links with hashes
+        $('.main-menubar a[href*="#"]')
+        // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                            &&
+                            location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top-68
+                            }, 1000, function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                }
+                            });
+                        }
+                    }
+                });
+    });
+
+    $(document).ready(function() {
+        var form = $('#myForm'); // contact form
+        var submit = $('.submit-btn'); // submit button
+
+        // form submit event
+        form.on('submit', function(e) {
+            e.preventDefault(); // prevent default form submit
+
+            $.ajax({
+                url: 'mail.php', // form action url
+                type: 'POST', // form submit method get/post
+                dataType: 'html', // request type html/json/xml
+                data: form.serialize(), // serialize form data
+                beforeSend: function() {
+                    alert.fadeOut();
+                    submit.html('Sending....'); // change submit button text
+                },
+                success: function(data) {
+                    alert.html(data).fadeIn(); // fade in response data
+                    form.trigger('reset'); // reset form
+                    submit.attr("style", "display: none !important");
+                },
+                error: function(e) {
+                    console.log(e)
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
