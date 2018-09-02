@@ -28,8 +28,8 @@
                 <div class="main-menubar d-flex align-items-center">
                     <nav class="hide">
                         <a class="animated" href="#home">{{i18n .Lang "navigation.home"}}</a>
-                        <a class="animated" href="#services">{{i18n .Lang "navigation.services"}}</a>
-                        <a class="animated" href="#cars">{{i18n .Lang "navigation.cars"}}</a>
+                        <a class="animated" href="#about-us">{{i18n .Lang "navigation.about-us"}}</a>
+                        <a class="animated" href="#transport">{{i18n .Lang "navigation.transport"}}</a>
                         <a class="animated" href="#order">{{i18n .Lang "navigation.order"}}</a>
                     </nav>
                     <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
@@ -54,55 +54,55 @@
     </div>
 </section>
 
-<section class="feature-area section-gap" id="services">
+<section class="feature-area section-gap" id="about-us">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="single-feature d-flex flex-row pb-30">
                     <div class="icon">
-                        <span class="lnr lnr-rocket"></span>
+                        <span class="lnr lnr-clock"></span>
                     </div>
                     <div class="desc">
-                        <h4 class="text-uppercase">{{i18n .Lang "service.schedule"}}</h4>
-                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                        <h4 class="text-uppercase">{{i18n .Lang "about-us.schedule"}}</h4>
+                        <p>{{i18n .Lang "about-us.schedule.description"}}</p>
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row pb-30">
                     <div class="icon">
-                        <span class="lnr lnr-chart-bars"></span>
+                        <span class="lnr lnr-thumbs-up"></span>
                     </div>
                     <div class="desc">
-                        <h4 class="text-uppercase">{{i18n .Lang "service.emergency"}}</h4>
-                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                        <h4 class="text-uppercase">{{i18n .Lang "about-us.quality"}}</h4>
+                        <p>{{i18n .Lang "about-us.quality.description"}}</p>
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row">
                     <div class="icon">
-                        <span class="lnr lnr-store"></span>
+                        <span class="lnr lnr-chart-bars"></span>
                     </div>
                     <div class="desc">
-                        <h4 class="text-uppercase">{{i18n .Lang "service.stock"}}</h4>
-                        <p>{{i18n .Lang "service.stock.description"}}</p>
+                        <h4 class="text-uppercase">{{i18n .Lang "about-us.discount"}}</h4>
+                        <p>{{i18n .Lang "about-us.discount.description"}}</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="single-feature d-flex flex-row pb-30">
                     <div class="icon">
-                        <span class="lnr lnr-heart-pulse"></span>
+                        <span class="lnr lnr-rocket"></span>
                     </div>
                     <div class="desc">
-                        <h4 class="text-uppercase">{{i18n .Lang "service.schedule"}}</h4>
-                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                        <h4 class="text-uppercase">{{i18n .Lang "about-us.emergency"}}</h4>
+                        <p>{{i18n .Lang "about-us.emergency.description"}}</p>
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row pb-30">
                     <div class="icon">
-                        <span class="lnr lnr-paw"></span>
+                        <span class="lnr lnr-earth"></span>
                     </div>
                     <div class="desc">
-                        <h4 class="text-uppercase">{{i18n .Lang "service.emergency"}}</h4>
-                        <p>Тут нужно придумать описание какие сервисы или услуги предоставляем.</p>
+                        <h4 class="text-uppercase">{{i18n .Lang "about-us.earth"}}</h4>
+                        <p>{{i18n .Lang "about-us.earth.description"}}</p>
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row">
@@ -110,8 +110,8 @@
                         <span class="lnr lnr-store"></span>
                     </div>
                     <div class="desc">
-                        <h4 class="text-uppercase">{{i18n .Lang "service.stock"}}</h4>
-                        <p>{{i18n .Lang "service.stock.description"}}</p>
+                        <h4 class="text-uppercase">{{i18n .Lang "about-us.stock"}}</h4>
+                        <p>{{i18n .Lang "about-us.stock.description"}}</p>
                     </div>
                 </div>
             </div>
@@ -119,48 +119,48 @@
     </div>
 </section>
 
-<section class="blog-area section-gap" id="cars">
+<section class="blog-area section-gap" id="transport">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 pb-30 header-text">
-                <h1>{{i18n .Lang "home.our-cars"}}</h1>
+                <h1>{{i18n .Lang "transport.header"}}</h1>
             </div>
         </div>
         <div class="row">
             <div class="single-blog col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-1.png" alt="">
                 <h4>
-                    <a href="#">{{i18n .Lang "home.car-1.header"}}</a>
+                    <a href="#">{{i18n .Lang "transport.car-1.header"}}</a>
                 </h4>
-                <p>{{i18n .Lang "home.car-1.description"}}</p>
+                <p>{{i18n .Lang "transport.car-1.description"}}</p>
             </div>
             <div class="single-blog col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-2.png" alt="">
                 <h4>
-                    <a href="#">{{i18n .Lang "home.car-2.header"}}</a>
+                    <a href="#">{{i18n .Lang "transport.car-2.header"}}</a>
                 </h4>
-                <p>{{i18n .Lang "home.car-2.description"}}</p>
+                <p>{{i18n .Lang "transport.car-2.description"}}</p>
             </div>
             <div class="single-blog col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-5.png" alt="">
                 <h4>
-                    <a href="#">{{i18n .Lang "home.car-5.header"}}</a>
+                    <a href="#">{{i18n .Lang "transport.car-5.header"}}</a>
                 </h4>
-                <p>{{i18n .Lang "home.car-5.description"}}</p>
+                <p>{{i18n .Lang "transport.car-5.description"}}</p>
             </div>
             <div class="single-blog col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-3.png" alt="">
                 <h4>
-                    <a href="#">{{i18n .Lang "home.car-3.header"}}</a>
+                    <a href="#">{{i18n .Lang "transport.car-3.header"}}</a>
                 </h4>
-                <p>{{i18n .Lang "home.car-3.description"}}</p>
+                <p>{{i18n .Lang "transport.car-3.description"}}</p>
             </div>
             <div class="single-blog col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-4.png" alt="">
                 <h4>
-                    <a href="#">{{i18n .Lang "home.car-4.header"}}</a>
+                    <a href="#">{{i18n .Lang "transport.car-4.header"}}</a>
                 </h4>
-                <p>{{i18n .Lang "home.car-4.description"}}</p>
+                <p>{{i18n .Lang "transport.car-4.description"}}</p>
             </div>
         </div>
     </div>
@@ -173,17 +173,17 @@
                 <img class="img-fluid" src="/static/img/gazel.jpg" alt="">
             </div>
             <div class="col-lg-6 col-12 about-right no-padding">
-                <h1>{{i18n .Lang "home.order.form.header1"}}<br> {{i18n .Lang "home.order.form.header2"}}</h1>
+                <h1>{{i18n .Lang "order.form.header1"}}<br> {{i18n .Lang "order.form.header2"}}</h1>
                 <form class="booking-form" id="myForm" action="/action/order">
                     <div class="row">
                         <div class="col-lg-6 d-flex flex-column">
-                            <input name="name" placeholder="{{i18n .Lang "home.order.form.name"}}" class="form-control mt-20" required="" type="text" required>
+                            <input name="name" placeholder="{{i18n .Lang "order.form.name"}}" class="form-control mt-20" required="" type="text" required>
                         </div>
                         <div class="col-lg-6 d-flex flex-column">
-                            <input name="phone" placeholder="{{i18n .Lang "home.order.form.phone"}}" class="form-control mt-20" required="" type="text" required>
+                            <input name="phone" placeholder="{{i18n .Lang "order.form.phone"}}" class="form-control mt-20" required="" type="text" required>
                         </div>
                         <div class="col-lg-12 flex-column">
-                            <textarea class="form-control mt-20" name="message" placeholder="{{i18n .Lang "home.order.form.message"}}" required=""></textarea>
+                            <textarea class="form-control mt-20" name="message" placeholder="{{i18n .Lang "order.form.message"}}" required=""></textarea>
                         </div>
 
                         <div class="col-lg-12 d-flex justify-content-end send-btn">
@@ -200,8 +200,7 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-md-8 pb-80 header-text">
-                <h1>{{i18n .Lang "home.about-us.header"}}</h1>
-                <p>{{i18n .Lang "home.about-us.p1"}}<br>{{i18n .Lang "home.about-us.p2"}}</p>
+                <h1>{{i18n .Lang "people.header"}}</h1>
             </div>
         </div>
         <div class="row">
@@ -250,7 +249,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 offset-1">
                 <div class="single-footer-widget mail-chimp">
-                    <h6 class="mb-20">{{i18n .Lang "home.contact-us"}}</h6>
+                    <h6 class="mb-20">{{i18n .Lang "footer.contact-us"}}</h6>
                     <h3>+7 963 123 49 34</h3>
                     <h3>+7 963 123 49 36</h3>
                     <h3>+7 960 078 46 74</h3>
