@@ -27,10 +27,10 @@
                 </div>
                 <div class="main-menubar d-flex align-items-center">
                     <nav class="hide">
-                        <a href="#home">{{i18n .Lang "navigation.home"}}</a>
-                        <a href="#services">{{i18n .Lang "navigation.services"}}</a>
-                        <a href="#order">{{i18n .Lang "navigation.order"}}</a>
-                        <a href="#cars">{{i18n .Lang "navigation.cars"}}</a>
+                        <a class="animated" href="#home">{{i18n .Lang "navigation.home"}}</a>
+                        <a class="animated" href="#services">{{i18n .Lang "navigation.services"}}</a>
+                        <a class="animated" href="#order">{{i18n .Lang "navigation.order"}}</a>
+                        <a class="animated" href="#cars">{{i18n .Lang "navigation.cars"}}</a>
                     </nav>
                     <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                 </div>
@@ -48,7 +48,7 @@
                     {{i18n .Lang "home.greeting.header2"}}
                 </h1>
                 <p>{{i18n .Lang "home.greeting.p1"}}</p>
-                <a class="main-menubar primary-btn mt-20 text-uppercase" href="#order">{{i18n .Lang "action.order"}}<span class="lnr lnr-arrow-right"></span></a>
+                <a class="primary-btn mt-20 text-uppercase animated" href="#order">{{i18n .Lang "action.order"}}<span class="lnr lnr-arrow-right"></span></a>
             </div>
         </div>
     </div>
@@ -124,7 +124,7 @@
 <section class="about-area" id="order">
     <div class="container-fluid">
         <div class="row d-flex justify-content-end align-items-center">
-            <div class="col-lg-6 about-left no-padding d-sm-none d-lg-block">
+            <div class="col-lg-6 about-left no-padding d-none d-lg-block">
                 <img class="img-fluid" src="/static/img/gazel.jpg" alt="">
             </div>
             <div class="col-lg-6 col-12 about-right no-padding">
@@ -317,7 +317,7 @@
 
 
         // Select all links with hashes
-        $('.main-menubar a[href*="#"]')
+        $('a[class*="animated"] ')
         // Remove links that don't actually link to anything
                 .not('[href="#"]')
                 .not('[href="#0"]')
