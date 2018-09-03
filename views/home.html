@@ -32,8 +32,8 @@
                     <nav class="hide">
                         <a class="animated" href="#home">{{i18n .Lang "navigation.home"}}</a>
                         <a class="animated" href="#about-us">{{i18n .Lang "navigation.about-us"}}</a>
-                        <a class="animated" href="#transport">{{i18n .Lang "navigation.transport"}}</a>
                         <a class="animated" href="#order">{{i18n .Lang "navigation.order"}}</a>
+                        <a class="animated" href="#transport">{{i18n .Lang "navigation.transport"}}</a>
                     </nav>
                     <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                 </div>
@@ -122,53 +122,6 @@
     </div>
 </section>
 
-<section class="transport-area section-gap" id="transport">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 pb-30 header-text">
-                <h1>{{i18n .Lang "transport.header"}}</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="single-transport col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-1.png" alt="{{i18n .Lang "transport.car-1.header"}}">
-                <h4>
-                    <a href="#">{{i18n .Lang "transport.car-1.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "transport.car-1.description"}}</p>
-            </div>
-            <div class="single-transport col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-2.png" alt="{{i18n .Lang "transport.car-2.header"}}">
-                <h4>
-                    <a href="#">{{i18n .Lang "transport.car-2.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "transport.car-2.description"}}</p>
-            </div>
-            <div class="single-transport col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-5.png" alt="{{i18n .Lang "transport.car-5.header"}}">
-                <h4>
-                    <a href="#">{{i18n .Lang "transport.car-5.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "transport.car-5.description"}}</p>
-            </div>
-            <div class="single-transport col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-3.png" alt="{{i18n .Lang "transport.car-3.description"}}">
-                <h4>
-                    <a href="#">{{i18n .Lang "transport.car-3.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "transport.car-3.description"}}</p>
-            </div>
-            <div class="single-transport col-md-4">
-                <img class="f-img img-fluid mx-auto" src="/static/img/car-4.png" alt="{{i18n .Lang "transport.car-4.header"}}">
-                <h4>
-                    <a href="#">{{i18n .Lang "transport.car-4.header"}}</a>
-                </h4>
-                <p>{{i18n .Lang "transport.car-4.description"}}</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="order-area" id="order">
     <div class="container-fluid">
         <div class="row d-flex justify-content-end align-items-center">
@@ -202,6 +155,7 @@
     </div>
 </section>
 
+{{/*
 <section class="people-area section-gap" id="people">
     <div class="container">
         <div class="row d-flex justify-content-center">
@@ -249,11 +203,59 @@
         </div>
     </div>
 </section>
+*/}}
+
+<section class="transport-area section-gap" id="transport">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 pb-30 header-text">
+                <h1>{{i18n .Lang "transport.header"}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="single-transport col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-1.png" alt="{{i18n .Lang "transport.car-1.header"}}">
+                <h4>
+                    <a href="#">{{i18n .Lang "transport.car-1.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "transport.car-1.description"}}</p>
+            </div>
+            <div class="single-transport col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-2.png" alt="{{i18n .Lang "transport.car-2.header"}}">
+                <h4>
+                    <a href="#">{{i18n .Lang "transport.car-2.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "transport.car-2.description"}}</p>
+            </div>
+            <div class="single-transport col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-5.png" alt="{{i18n .Lang "transport.car-5.header"}}">
+                <h4>
+                    <a href="#">{{i18n .Lang "transport.car-5.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "transport.car-5.description"}}</p>
+            </div>
+            <div class="single-transport col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-3.png" alt="{{i18n .Lang "transport.car-3.description"}}">
+                <h4>
+                    <a href="#">{{i18n .Lang "transport.car-3.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "transport.car-3.description"}}</p>
+            </div>
+            <div class="single-transport col-md-4">
+                <img class="f-img img-fluid mx-auto" src="/static/img/car-4.png" alt="{{i18n .Lang "transport.car-4.header"}}">
+                <h4>
+                    <a href="#">{{i18n .Lang "transport.car-4.header"}}</a>
+                </h4>
+                <p>{{i18n .Lang "transport.car-4.description"}}</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer id="footer" class="footer-area section-gap">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 offset-1">
+            <div class="col-md-4 offset-md-1">
                 <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.mobiles"}}</h6>
                     <h6><a href="tel:+7-963-123-4934"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-34</a></h6>
@@ -261,12 +263,12 @@
                     <h6><a href="tel:+7-963-123-4936"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-36</a></h6>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.emails"}}</h6>
-                    <h6><a href="mailto:trassalogistik@mail.ru"><span class="lnr lnr-envelope"></span> trassalogistik@mail.ru</a></h6>
-                    <h6><a href="mailto:gadelshin-rustam@mail.ru"><span class="lnr lnr-envelope"></span>  gadelshin-rustam@mail.ru</a></h6>
-                    <h6><a href="mailto:gadelshinaelena1985@gmail.com"><span class="lnr lnr-envelope"></span> gadelshinaelena1985@gmail.com</a></h6>
+                    <h6><a href="mailto:trassalogistik@mail.ru"><span class="lnr lnr-envelope"></span> trassalogistik<wbr>@mail.ru</a></h6>
+                    <h6><a href="mailto:gadelshin-rustam@mail.ru"><span class="lnr lnr-envelope"></span> gadelshin-rustam<wbr>@mail.ru</a></h6>
+                    <h6><a href="mailto:gadelshinaelena1985@gmail.com"><span class="lnr lnr-envelope"></span> gadelshinaelena1985<wbr>@gmail.com</a></h6>
                 </div>
             </div>
         </div>
