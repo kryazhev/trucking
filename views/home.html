@@ -250,7 +250,7 @@
     </div>
 </section>
 
-<footer class="footer-area section-gap">
+<footer id="footer" class="footer-area section-gap">
     <div class="container">
         <div class="row">
             <div class="col-md-5 offset-1">
@@ -289,6 +289,30 @@
 <script src="/static/js/bootstrap.min.js"></script>
 <script>
 
+    function orderSuccess() {
+        Messenger().post({
+            message: '{{i18n .Lang "order.action-result.success"}}',
+            type: 'success',
+            showCloseButton: true
+        });
+    }
+
+    function orderFail() {
+        Messenger().post({
+            message: '{{i18n .Lang "order.action-result.fail"}}',
+            type: 'error',
+            showCloseButton: true,
+            actions: {
+                call: {
+                    label: '{{i18n .Lang "action.call"}}',
+                    action: function() {
+                        return $('html, body').animate({scrollTop: $("#footer").offset().top}, 1000);
+                    }
+                }
+            }
+        });
+    }
+
 (function() {
     'use strict';
     window.addEventListener('load', function() {
@@ -302,25 +326,21 @@
                 if (form.checkValidity()) {
                     $("#orderSubmit").html("{{i18n .Lang "action.sending"}} ...");
 
-                    $.post("/action/order", $("#orderForm").serialize()).done(function(data) {
-                        console.log(data);
-                        $("#orderSubmit").html("{{i18n .Lang "action.send"}}");
-                        if (data.success) {
-                            Messenger().post({
-                                message: '{{i18n .Lang "order.action-result.success"}}',
-                                type: 'success',
-                                showCloseButton: true
+                    $.post("/action/order", $("#orderForm").serialize())
+                            .done(function(data) {
+                                if (data.success) {
+                                    orderSuccess();
+                                } else {
+                                    orderFail();
+                                }
+                            })
+                            .fail(function () {
+                                orderFail();
+                            })
+                            .always(function () {
+                                $("#orderSubmit").html("{{i18n .Lang "action.send"}}");
+                                form.classList.remove('was-validated');
                             });
-                        } else {
-                            Messenger().post({
-                                message: '{{i18n .Lang "order.action-result.fail"}}',
-                                type: 'error',
-                                showCloseButton: true
-                            });
-                        }
-
-                        form.classList.remove('was-validated');
-                    });
                 }
                 form.classList.add('was-validated');
             }, false);

@@ -47,7 +47,7 @@ func (c *AppController) Order() {
 	phone := c.GetString("phone")
 	message := c.GetString("message")
 
-	err := models.SendEmail(email, "vassiliy.kryazhev@gmail.com", "Заказ от "+phone, message)
+	err := models.SendEmail(email, "trucking-kzn@herokuapp.com", "Заказ от "+phone, message)
 
 	if err == nil {
 		c.ajaxResponseSuccess(nil)
