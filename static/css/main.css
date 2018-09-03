@@ -1977,7 +1977,7 @@ nav a:hover {
   opacity: .5;
 }
 
-.p1-gradient-color, .banner-content h1, .single-fact h2, .single-footer-widget h3 {
+.p1-gradient-color, .banner-content h1, .single-fact h2, .single-footer-widget h3, .single-footer-widget h4, .single-footer-widget h5, .single-footer-widget h6 {
   background: -moz-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
   background: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
   background: -ms-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);

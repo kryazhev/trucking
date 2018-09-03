@@ -9,14 +9,15 @@
     <meta name="keywords" content="{{i18n .Lang "keywords"}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="https://png.icons8.com/color/48/f39c12/truck.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700">
     <link rel="stylesheet" href="/static/css/linearicons.css">
-    <link rel="stylesheet" href="/static/css/magnific-popup.css">
-    <link rel="stylesheet" href="/static/css/nice-select.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/messenger.css">
+    <link rel="stylesheet" href="/static/css/messenger-theme-future.css">
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 
 <body>
@@ -56,12 +57,12 @@
     </div>
 </section>
 
-<section class="about-us-area section-gap border border-secondary" id="about-us">
+<section class="about-us-area section-gap" id="about-us">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="single-feature d-flex flex-row pb-30">
-                    <div class="icon">
+                    <div class="icon d-none d-md-block">
                         <span class="lnr lnr-clock"></span>
                     </div>
                     <div class="desc">
@@ -70,7 +71,7 @@
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row pb-30">
-                    <div class="icon">
+                    <div class="icon d-none d-md-block">
                         <span class="lnr lnr-thumbs-up"></span>
                     </div>
                     <div class="desc">
@@ -79,7 +80,7 @@
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row">
-                    <div class="icon">
+                    <div class="icon d-none d-md-block">
                         <span class="lnr lnr-chart-bars"></span>
                     </div>
                     <div class="desc">
@@ -90,7 +91,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="single-feature d-flex flex-row pb-30">
-                    <div class="icon">
+                    <div class="icon d-none d-md-block">
                         <span class="lnr lnr-rocket"></span>
                     </div>
                     <div class="desc">
@@ -99,7 +100,7 @@
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row pb-30">
-                    <div class="icon">
+                    <div class="icon d-none d-md-block">
                         <span class="lnr lnr-earth"></span>
                     </div>
                     <div class="desc">
@@ -108,7 +109,7 @@
                     </div>
                 </div>
                 <div class="single-feature d-flex flex-row">
-                    <div class="icon">
+                    <div class="icon d-none d-md-block">
                         <span class="lnr lnr-store"></span>
                     </div>
                     <div class="desc">
@@ -176,20 +177,23 @@
             </div>
             <div class="col-lg-6 col-12 order-right no-padding">
                 <h1>{{i18n .Lang "order.form.header1"}}<br> {{i18n .Lang "order.form.header2"}}</h1>
-                <form class="booking-form" id="myForm" action="/action/order">
+                <form id="orderForm" class="needs-validation" novalidate autocomplete="off">
                     <div class="row">
                         <div class="col-lg-6 d-flex flex-column">
                             <input name="name" placeholder="{{i18n .Lang "order.form.name"}}" class="form-control mt-20" required="required" type="text">
+                            <div class="invalid-tooltip">{{i18n .Lang "order.validation-error.field.required"}}</div>
                         </div>
                         <div class="col-lg-6 d-flex flex-column">
                             <input name="phone" placeholder="{{i18n .Lang "order.form.phone"}}" class="form-control mt-20" required="required" type="text">
+                            <div class="invalid-tooltip">{{i18n .Lang "order.validation-error.field.required"}}</div>
                         </div>
                         <div class="col-lg-12 flex-column">
-                            <textarea class="form-control mt-20" name="message" placeholder="{{i18n .Lang "order.form.message"}}" required=""></textarea>
+                            <textarea name="message" placeholder="{{i18n .Lang "order.form.message"}}" class="form-control mt-20" required="required"></textarea>
+                            <div class="invalid-tooltip">{{i18n .Lang "order.validation-error.field.required"}}</div>
                         </div>
 
                         <div class="col-lg-12 d-flex justify-content-end send-btn">
-                            <button class="submit-btn primary-btn mt-20 text-uppercase">{{i18n .Lang "action.send"}}<span class="lnr lnr-arrow-right"></span></button>
+                            <button id="orderSubmit" class="submit-btn primary-btn mt-20 text-uppercase">{{i18n .Lang "action.send"}}<span class="lnr lnr-arrow-right"></span></button>
                         </div>
                     </div>
                 </form>
@@ -252,17 +256,17 @@
             <div class="col-md-5 offset-1">
                 <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.mobiles"}}</h6>
-                    <h3><a href="tel:+7-963-123-4934"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-34</a></h3>
-                    <h3><a href="tel:+7-960-078-4674"><span class="lnr lnr-phone-handset"></span> +7 (960) 078-46-74</a></h3>
-                    <h3><a href="tel:+7-963-123-4936"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-36</a></h3>
+                    <h6><a href="tel:+7-963-123-4934"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-34</a></h6>
+                    <h6><a href="tel:+7-960-078-4674"><span class="lnr lnr-phone-handset"></span> +7 (960) 078-46-74</a></h6>
+                    <h6><a href="tel:+7-963-123-4936"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-36</a></h6>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.emails"}}</h6>
-                    <h3><a href="mailto:gadelshin-rustam@mail.ru"><span class="lnr lnr-envelope"></span>  gadelshin-rustam@mail.ru</a></h3>
-                    <br/>
-                    <h3><a href="mailto:gadelshinaelena1985@gmail.com"><span class="lnr lnr-envelope"></span> gadelshinaelena1985@gmail.com</a></h3>
+                    <h6><a href="mailto:trassalogistik@mail.ru"><span class="lnr lnr-envelope"></span> trassalogistik@mail.ru</a></h6>
+                    <h6><a href="mailto:gadelshin-rustam@mail.ru"><span class="lnr lnr-envelope"></span>  gadelshin-rustam@mail.ru</a></h6>
+                    <h6><a href="mailto:gadelshinaelena1985@gmail.com"><span class="lnr lnr-envelope"></span> gadelshinaelena1985@gmail.com</a></h6>
                 </div>
             </div>
         </div>
@@ -277,16 +281,53 @@
     </div>
 </footer>
 
-<script src="/static/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="/static/js/vendor/bootstrap.min.js"></script>
-<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+<script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/jquery.sticky.js"></script>
-<script src="/static/js/parallax.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/static/js/jquery.magnific-popup.min.js"></script>
-<script src="/static/js/waypoints.min.js"></script>
-<script >
+<script src="/static/js/messenger.min.js"></script>
+<script src="/static/js/messenger-theme-future.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script>
+
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                if (form.checkValidity()) {
+                    $("#orderSubmit").hide();
+
+                    $.post("/action/order", $("#orderForm").serialize()).done(function(data) {
+                        console.log(data);
+                        $("#orderSubmit").show();
+                        if (data.success) {
+                            Messenger().post({
+                                message: '{{i18n .Lang "order.action-result.success"}}',
+                                type: 'success',
+                                showCloseButton: true
+                            });
+                        } else {
+                            Messenger().post({
+                                message: '{{i18n .Lang "order.action-result.fail"}}',
+                                type: 'error',
+                                showCloseButton: true
+                            });
+                        }
+
+                        form.classList.remove('was-validated');
+                    });
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
     $(document).ready(function(){
         "use strict";
 
@@ -303,7 +344,6 @@
         //-------- Active Sticky Js ----------//
         $(".default-header").sticky({topSpacing:0});
 
-
         // -------   Active Mobile Menu-----//
         $(".menu-bar").on('click', function(e){
             e.preventDefault();
@@ -312,9 +352,6 @@
             $(".main-menu").addClass('mobile-menu');
         });
 
-
-        $('.nav-item a:first').tab('show');
-
         $('a[class*="animated"] ').click(function(event) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -322,38 +359,9 @@
                 event.preventDefault();
                 $('html, body').animate({scrollTop: target.offset().top}, 1000);
             }
-
         });
     });
 
-    $(document).ready(function() {
-        var form = $('#myForm'); // contact form
-        var submit = $('.submit-btn'); // submit button
-
-        // form submit event
-        form.on('submit', function(e) {
-            e.preventDefault(); // prevent default form submit
-
-            $.ajax({
-                url: 'mail.php', // form action url
-                type: 'POST', // form submit method get/post
-                dataType: 'html', // request type html/json/xml
-                data: form.serialize(), // serialize form data
-                beforeSend: function() {
-                    alert.fadeOut();
-                    submit.html('Sending....'); // change submit button text
-                },
-                success: function(data) {
-                    alert.html(data).fadeIn(); // fade in response data
-                    form.trigger('reset'); // reset form
-                    submit.attr("style", "display: none !important");
-                },
-                error: function(e) {
-                    console.log(e)
-                }
-            });
-        });
-    });
 </script>
 </body>
 </html>

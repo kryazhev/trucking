@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-var pages = []string{"home", "home-new"}
+var pages = []string{"home"}
 
 type AppController struct {
 	beego.Controller
