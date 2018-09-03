@@ -300,11 +300,11 @@
                 event.preventDefault();
                 event.stopPropagation();
                 if (form.checkValidity()) {
-                    $("#orderSubmit").hide();
+                    $("#orderSubmit").html("{{i18n .Lang "action.sending"}} ...");
 
                     $.post("/action/order", $("#orderForm").serialize()).done(function(data) {
                         console.log(data);
-                        $("#orderSubmit").show();
+                        $("#orderSubmit").html("{{i18n .Lang "action.send"}}");
                         if (data.success) {
                             Messenger().post({
                                 message: '{{i18n .Lang "order.action-result.success"}}',
