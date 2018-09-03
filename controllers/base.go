@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-var pages = []string{"home", "example"}
+var pages = []string{"home", "home-new"}
 
 type AppController struct {
 	beego.Controller
@@ -45,9 +45,11 @@ func (c *AppController) ajaxResponseFail(message string) {
 func (c *AppController) Prepare() {
 	c.Data["OAuthConfigs"] = oauth2.AuthConfigs
 
-	user := c.GetSession("user")
-	if user != nil {
-		c.Data["User"] = user
+	if beego.GlobalSessions != nil {
+		user := c.GetSession("user")
+		if user != nil {
+			c.Data["User"] = user
+		}
 	}
 
 	if c.Data["Lang"] == nil {

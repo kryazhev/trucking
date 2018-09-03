@@ -5,6 +5,6 @@ func (c *AppController) Get() {
 	c.initData("home")
 }
 
-func (c *AppController) Example() {
-	c.initData("example")
+func (c *AppController) HomeNew() {
+	c.initData("home-new")
 }
