@@ -30,10 +30,10 @@
                 </div>
                 <div class="main-menubar d-flex align-items-center">
                     <nav class="hide">
-                        <a class="animated" href="#home">{{i18n .Lang "navigation.home"}}</a>
-                        <a class="animated" href="#about-us">{{i18n .Lang "navigation.about-us"}}</a>
-                        <a class="animated" href="#order">{{i18n .Lang "navigation.order"}}</a>
-                        <a class="animated" href="#transport">{{i18n .Lang "navigation.transport"}}</a>
+                        <a class="menu-item" href="#home">{{i18n .Lang "navigation.home"}}</a>
+                        <a class="menu-item" href="#about-us">{{i18n .Lang "navigation.about-us"}}</a>
+                        <a class="menu-item" href="#order">{{i18n .Lang "navigation.order"}}</a>
+                        <a class="menu-item" href="#transport">{{i18n .Lang "navigation.transport"}}</a>
                     </nav>
                     <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                 </div>
@@ -51,7 +51,7 @@
                     {{i18n .Lang "home.greeting.header2"}}
                 </h1>
                 <p>{{i18n .Lang "home.greeting.p1"}}</p>
-                <a class="primary-btn mt-20 text-uppercase animated" href="#order">{{i18n .Lang "action.order"}}<span class="lnr lnr-arrow-right"></span></a>
+                <a class="primary-btn mt-20 text-uppercase menu-item" href="#footer">{{i18n .Lang "action.call"}}<span class="lnr lnr-arrow-right"></span></a>
             </div>
         </div>
     </div>
@@ -374,7 +374,7 @@
             $(".main-menu").addClass('mobile-menu');
         });
 
-        $('a[class*="animated"] ').click(function(event) {
+        $('a[class*="menu-item"] ').click(function(event) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
