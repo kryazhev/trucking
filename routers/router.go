@@ -9,6 +9,8 @@ func init() {
 	beego.Router("/", &controllers.AppController{})
 	beego.Router("/home.html", &controllers.AppController{}, "get:Get")
 
+	beego.Router("/sitemap.xml", &controllers.AppController{}, "get:SiteMap")
+
 	/* actions */
 	beego.Router("/action/order", &controllers.AppController{}, "post:Order")
 
