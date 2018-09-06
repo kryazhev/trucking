@@ -6,6 +6,5 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://trucking-kzn.herokuapp.com/</loc>
-        <lastmod>2018-09-06T09:41:19+00:00</lastmod>
     </url>
 </urlset>
