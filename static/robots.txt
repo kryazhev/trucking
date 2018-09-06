@@ -3,4 +3,4 @@ Disallow: /home.html
 Disallow: /action/
 
 Host: https://trucking-kzn.herokuapp.com
-Sitemap: https://trucking-kzn.herokuapp.com//sitemap.xml
+Sitemap: https://trucking-kzn.herokuapp.com/sitemap.xml
