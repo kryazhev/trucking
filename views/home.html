@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="{{.Lang}}">
 <head>
     <meta charset="UTF-8">
     <title>{{i18n .Lang "title"}}</title>
-    <meta name="google-site-verification" content="iJNs5k1zHZj-GwgRTdDtvuN40ukqJM5H4PtmE_uPywM" />
     <meta name="description" content="{{i18n .Lang "description"}}">
     <meta name="keywords" content="{{i18n .Lang "keywords"}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,14 +25,14 @@
         <div class="header-wrap">
             <div class="header-top d-flex justify-content-between align-items-center">
                 <div class="logo">
-                    <a href="#home"><img src="https://png.icons8.com/color/48/f39c12/truck.png" alt="{{i18n .Lang "title"}}"></a>
+                    <a href="#home" hreflang="{{.Lang}}"><img src="https://png.icons8.com/color/48/f39c12/truck.png" alt="{{i18n .Lang "title"}}"></a>
                 </div>
                 <div class="main-menubar d-flex align-items-center">
                     <nav class="hide">
-                        <a class="menu-item" href="#home">{{i18n .Lang "navigation.home"}}</a>
-                        <a class="menu-item" href="#about-us">{{i18n .Lang "navigation.about-us"}}</a>
-                        <a class="menu-item" href="#order">{{i18n .Lang "navigation.order"}}</a>
-                        <a class="menu-item" href="#transport">{{i18n .Lang "navigation.transport"}}</a>
+                        <a class="menu-item" href="#home" hreflang="{{.Lang}}">{{i18n .Lang "navigation.home"}}</a>
+                        <a class="menu-item" href="#about-us" hreflang="{{.Lang}}">{{i18n .Lang "navigation.about-us"}}</a>
+                        <a class="menu-item" href="#order" hreflang="{{.Lang}}">{{i18n .Lang "navigation.order"}}</a>
+                        <a class="menu-item" href="#transport" hreflang="{{.Lang}}">{{i18n .Lang "navigation.transport"}}</a>
                     </nav>
                     <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                 </div>
@@ -51,7 +50,7 @@
                     {{i18n .Lang "home.greeting.header2"}}
                 </h1>
                 <p>{{i18n .Lang "home.greeting.p1"}}</p>
-                <a class="primary-btn mt-20 text-uppercase menu-item" href="#footer">{{i18n .Lang "action.call"}}<span class="lnr lnr-arrow-right"></span></a>
+                <a class="primary-btn mt-20 text-uppercase menu-item" href="#footer" hreflang="{{.Lang}}">{{i18n .Lang "action.call"}}<span class="lnr lnr-arrow-right"></span></a>
             </div>
         </div>
     </div>
@@ -216,35 +215,35 @@
             <div class="single-transport col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-1.png" alt="{{i18n .Lang "transport.car-1.header"}}">
                 <h4>
-                    <a href="#">{{i18n .Lang "transport.car-1.header"}}</a>
+                    <a href="#" hreflang="{{.Lang}}">{{i18n .Lang "transport.car-1.header"}}</a>
                 </h4>
                 <p>{{i18n .Lang "transport.car-1.description"}}</p>
             </div>
             <div class="single-transport col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-2.png" alt="{{i18n .Lang "transport.car-2.header"}}">
                 <h4>
-                    <a href="#">{{i18n .Lang "transport.car-2.header"}}</a>
+                    <a href="#" hreflang="{{.Lang}}">{{i18n .Lang "transport.car-2.header"}}</a>
                 </h4>
                 <p>{{i18n .Lang "transport.car-2.description"}}</p>
             </div>
             <div class="single-transport col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-5.png" alt="{{i18n .Lang "transport.car-5.header"}}">
                 <h4>
-                    <a href="#">{{i18n .Lang "transport.car-5.header"}}</a>
+                    <a href="#" hreflang="{{.Lang}}">{{i18n .Lang "transport.car-5.header"}}</a>
                 </h4>
                 <p>{{i18n .Lang "transport.car-5.description"}}</p>
             </div>
             <div class="single-transport col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-3.png" alt="{{i18n .Lang "transport.car-3.description"}}">
                 <h4>
-                    <a href="#">{{i18n .Lang "transport.car-3.header"}}</a>
+                    <a href="#" hreflang="{{.Lang}}">{{i18n .Lang "transport.car-3.header"}}</a>
                 </h4>
                 <p>{{i18n .Lang "transport.car-3.description"}}</p>
             </div>
             <div class="single-transport col-md-4">
                 <img class="f-img img-fluid mx-auto" src="/static/img/car-4.png" alt="{{i18n .Lang "transport.car-4.header"}}">
                 <h4>
-                    <a href="#">{{i18n .Lang "transport.car-4.header"}}</a>
+                    <a href="#" hreflang="{{.Lang}}">{{i18n .Lang "transport.car-4.header"}}</a>
                 </h4>
                 <p>{{i18n .Lang "transport.car-4.description"}}</p>
             </div>
@@ -258,16 +257,16 @@
             <div class="col-md-4 offset-md-1">
                 <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.mobiles"}}</h6>
-                    <h6><a href="tel:+7-963-123-4936"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-36</a></h6>
-                    <h6><a href="tel:+7-960-078-4674"><span class="lnr lnr-phone-handset"></span> +7 (960) 078-46-74</a></h6>
+                    <h6><a href="tel:+7-963-123-4936" hreflang="{{.Lang}}"><span class="lnr lnr-phone-handset"></span> +7 (963) 123-49-36</a></h6>
+                    <h6><a href="tel:+7-960-078-4674" hreflang="{{.Lang}}"><span class="lnr lnr-phone-handset"></span> +7 (960) 078-46-74</a></h6>
                 </div>
             </div>
             <div class="col-md-7">
                 <div class="single-footer-widget">
                     <h6 class="mb-20">{{i18n .Lang "footer.emails"}}</h6>
-                    <h6><a href="mailto:gadelshinaelena1985@gmail.com"><span class="lnr lnr-envelope"></span> gadelshinaelena1985<wbr>@gmail.com</a></h6>
-                    <h6><a href="mailto:trassalogistik@mail.ru"><span class="lnr lnr-envelope"></span> trassalogistik<wbr>@mail.ru</a></h6>
-                    <h6><a href="mailto:gadelshin-rustam@mail.ru"><span class="lnr lnr-envelope"></span> gadelshin-rustam<wbr>@mail.ru</a></h6>
+                    <h6><a href="mailto:gadelshinaelena1985@gmail.com" hreflang="{{.Lang}}"><span class="lnr lnr-envelope"></span> gadelshinaelena1985<wbr>@gmail.com</a></h6>
+                    <h6><a href="mailto:trassalogistik@mail.ru" hreflang="{{.Lang}}"><span class="lnr lnr-envelope"></span> trassalogistik<wbr>@mail.ru</a></h6>
+                    <h6><a href="mailto:gadelshin-rustam@mail.ru" hreflang="{{.Lang}}"><span class="lnr lnr-envelope"></span> gadelshin-rustam<wbr>@mail.ru</a></h6>
                 </div>
             </div>
         </div>

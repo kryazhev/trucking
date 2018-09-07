@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /home.html
 Disallow: /action/
 
 Host: https://trucking-kzn.herokuapp.com
