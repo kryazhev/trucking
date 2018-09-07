@@ -1,4 +1,6 @@
 User-agent: *
+Crawl-delay: 10
+
 Disallow: /action/
 
 Host: https://trucking-kzn.herokuapp.com
