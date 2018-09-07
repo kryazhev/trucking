@@ -1,8 +1,9 @@
 package controllers
 
 /* Base */
-func (c *AppController) SiteMap() {
+func (c *BaseController) SiteMap() {
 	c.Ctx.Output.Header("Content-Type", "application/xml")
+	c.Ctx.Output.ContentType("xml")
 	c.TplName = "sitemap.tpl"
 }
 

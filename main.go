@@ -3,14 +3,13 @@ package main
 import (
 	"github.com/astaxie/beego"
 	"github.com/beego/i18n"
-	_ "github.com/kryazhev/oauth2"
 	"github.com/kryazhev/trucking/models"
 	_ "github.com/kryazhev/trucking/routers"
 	"os"
 	"strings"
 )
 
-var envNames = []string{"PORT", "run-mode", "smtp.address", "smtp.host", "smtp.user", "smtp.password"}
+var envNames = []string{"PORT", "run-mode", "enable-http", "enable-https", "smtp.address", "smtp.host", "smtp.user", "smtp.password"}
 
 func main() {
 	// Display list of environment variables
